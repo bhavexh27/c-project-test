@@ -1,12 +1,12 @@
 #!/bin/bash
 
-if [ $# -ne 1 ];then
-echo "pass only one number"
+if [ $# -ne 2 ];then
+echo "pass only two number"
 exit 1
 fi
 
-if [ $1 -eq 5 ];then
-echo "$1 is five"
+if [ $1 -gt $2 ];then
+echo "$1 is big"
 else
-echo "$1 is not five"
+echo "$2 is big"
 fi
